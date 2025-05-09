@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes breathe {
+  0% {
+    transform: scale(1);
+    background-color: #a855f7;
+  }
+  50% {
+    transform: scale(1.05);
+    background-color: #d6b3ff;
+  }
+  100% {
+    transform: scale(1);
+    background-color: #a855f7;
+  }
+}
+
+.bg-breathing {
+  animation: breathe 4s infinite ease-in-out;
+}
