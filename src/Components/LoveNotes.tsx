@@ -24,7 +24,7 @@ const LoveNotes = ({ notes, currentNote }: LoveNotesProps) => {
         animate={{ opacity: 1, y: 0 }} // Fade in and move up
         key={currentNoteState} // Key will make it reset the animation when the note changes
         exit={{ opacity: 0, y: 20 }} // Fade out and move down when the note changes
-        transition={{ duration: 1.5 }} // Duration of the transition
+        transition={{ duration: 1.0 }} // Duration of the transition
       >
         <p className="text-3xl font-heading font-black italic text-white">
           {currentNoteState}
